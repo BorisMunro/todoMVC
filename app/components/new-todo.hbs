@@ -1,3 +1,9 @@
 <div class="">
-    <input type="text" class="w-full p-2 rounded-xl" placeholder="What needs to be done?" aria-label=""/>
+    <input 
+        type="text" 
+        class="w-full p-2 rounded-xl focus:border-none focus:outline-none" 
+        placeholder="What needs to be done?" 
+        aria-label="What needs to be done?" 
+        {{on 'keydown' this.onKeyDown}}
+    />
 </div>
