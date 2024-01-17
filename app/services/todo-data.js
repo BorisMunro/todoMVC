@@ -19,5 +19,8 @@ export default class TodoDataService extends Service {
     let newTodo = new Todo(text);
     this.todos.pushObject(newTodo);
   }
- 
+  toggleIsComplete(text) {
+    todo = this.todos.map( todo => todo.text === text);
+    todo.isCompleted = !todo.isCompleted;
+  }
 }
