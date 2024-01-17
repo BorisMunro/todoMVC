@@ -1,1 +1,14 @@
-    <li class="p-2 text-center rounded-xl bg-white">{{@todo.text}}</li>
+    <li class="p-2 text-center rounded-xl bg-white flex justify-between">
+        <input 
+            type="checkbox" 
+            aria-label="" 
+            checked={{@todo.isCompleted}}
+        />
+        <div>
+            {{@todo.text}}
+        </div>
+        <div class="flex gap-4">
+            <button>Edit</button>
+            <button>Delete</button>
+        </div>
+    </li>
