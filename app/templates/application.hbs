@@ -1,8 +1,32 @@
 {{page-title "TodoMVC"}}
 
 {{! The following component displays Ember's default welcome message. }}
-<div class="text-2xl">
-    hhh
+<div class="container mx-auto">
+    <div class="text-center text-3xl uppercase text-blue-800 py-10">
+        TODOS Ember.js Web application
+    </div>
+    <div class="w-1/2 bg-slate-500 p-5 mx-auto rounded-3xl">
+        <div class="">
+            <input type="text" class="w-full p-2 rounded-xl" placeholder="What needs to be done?" aria-label=""/>
+        </div>
+        <ul class="grid grid-cols-1 gap-3 mt-3">
+            <li class="p-2 text-center rounded-xl bg-white">Buy Movie tickets</li>
+            <li  class="p-2 text-center rounded-xl bg-white">Go to Movie</li>
+        </ul>
+        <div class="flex justify-between text-white mt-5">
+            <div class="text-xl">
+                0 todos left
+            </div>
+            <div class="flex gap-3">
+                <a href="">All</a>
+                <a href="">Active</a>
+                <a href="">completed</a>
+            </div>
+            <div class="">
+                <a href="">Clear Completed</a>
+            </div>
+        </div>
+    </div>
 </div>{{! Feel free to remove this! }}
 
 {{outlet}}
