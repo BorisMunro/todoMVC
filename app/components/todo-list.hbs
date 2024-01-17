@@ -1,3 +1,5 @@
 <ul class="grid grid-cols-1 gap-3 mt-3">
-    <TodoItem />
+    {{#each this.todos.all as |todo|}}
+        <TodoItem @todo={{todo}} />
+    {{/each}}
 </ul>
