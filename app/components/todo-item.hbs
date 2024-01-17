@@ -3,6 +3,7 @@
             type="checkbox" 
             aria-label="" 
             checked={{@todo.isCompleted}}
+            {{on 'change' (fn this.toggleIsComplete @todo.text)}}
         />
         <div>
             {{@todo.text}}
