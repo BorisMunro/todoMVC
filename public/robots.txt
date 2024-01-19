@@ -1,3 +1,7 @@
 # http://www.robotstxt.org
 User-agent: *
 Disallow:
+1
+git add .
+git commit -m 'fix: updated UI'
+git push
